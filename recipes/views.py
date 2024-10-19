@@ -2,13 +2,13 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-def my_reponse(response):
-    return HttpResponse('HOME')
+def my_reponse(request):
+    return render(request, 'recipes/home.html')
 
 
-def contato(response):
+def contato(request):
     return HttpResponse('Conatato')
 
 
-def sobre(response):
+def sobre(request):
     return HttpResponse('Sobre')
